@@ -48,7 +48,7 @@
     console.log(result.os);             // {name: "Ubuntu", version: "11.10"}
     console.log(result.os.version);     // "11.10"
     console.log(result.engine.name);    // "WebKit"
-    document.getElementById('armVersion').innerHTML = result.cpu.architecture;   // "amd64"
+      // "amd64"
 
     // do some other tests
     var uastring2 = "Mozilla/5.0 (compatible; Konqueror/4.1; OpenBSD) KHTML/4.1.4 (like Gecko)";
@@ -65,5 +65,8 @@
 </head>
 <body>
 	<h1 id="armVersion"></h1>
+	<script>
+	document.getElementById('armVersion').innerHTML = result.cpu.architecture; 
+	</script>
 </body>
 </html>
